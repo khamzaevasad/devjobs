@@ -3,6 +3,9 @@
 @import "./css/fonts.css";
 @import "./css/header.css";
 @import "./css/footer.css";
+@import "./css/filter.css";
+@import "./css/card.css";
+@import "./css/loader.css";
 
 *,
 *::after,
@@ -38,6 +41,7 @@ body {
   flex-direction: column;
   height: 100%;
   font-family: "Kumbh Sans";
+  background-color: var(--bg-color);
 }
 
 main {
@@ -55,4 +59,21 @@ h1 {
   padding-right: 5rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.btn {
+  background: var(--color-violet);
+  padding: 1.6rem 3.8rem;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+.btn:hover {
+  background: var(--color-light-violet);
+}
+.hidden {
+  display: none;
 }

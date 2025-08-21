@@ -1,0 +1,76 @@
+.form-container {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-size: 1.6rem;
+  padding: 1.3rem 1.6rem;
+  margin-top: -4rem;
+}
+
+/* Search input */
+.form-label {
+  position: relative;
+  flex: 1;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3.6rem; /* ikonaga joy */
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.icon-search {
+  position: absolute;
+  top: 50%;
+  left: 1.2rem;
+  transform: translateY(-50%);
+  width: 1.6rem;
+  height: 1.6rem;
+  pointer-events: none;
+}
+
+/* Location select */
+.location-label {
+  position: relative;
+  flex: 1;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.location-label select {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3.6rem; /* ikonaga joy qoldiramiz */
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  color: var(--color-very-dark-blue);
+  appearance: none;
+  background: transparent;
+}
+
+.icon-location {
+  position: absolute;
+  top: 50%;
+  left: 1.2rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Checkbox */
+.form-container input[type="checkbox"] {
+  margin: 0 0.5rem 0 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.checkbox-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.search-btn {
+  margin-left: 1rem;
+}

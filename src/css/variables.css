@@ -1,0 +1,41 @@
+/* Default Light Mode */
+:root {
+  /* Primary Colors */
+  --color-violet: #9e7f66;
+  --color-light-violet: #939bf4;
+  --color-very-dark-blue: #19202d;
+  --color-midnight: #121721;
+
+  /* Secondary Colors */
+  --color-white: #ffffff;
+  --color-light-grey: #f4f6f8;
+  --color-grey: #9daec2;
+  --color-dark-grey: #6e8098;
+
+  /* Background & Text */
+  --bg-color: var(--color-light-grey);
+  --text-color: var(--color-very-dark-blue);
+  --card-bg: var(--color-white);
+  --accent-color: var(--color-light-violet);
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  /* Primary Colors */
+  --color-violet: #9e7f66;
+  --color-light-violet: #939bf4;
+  --color-very-dark-blue: #19202d;
+  --color-midnight: #121721;
+
+  /* Secondary Colors */
+  --color-white: #ffffff;
+  --color-light-grey: #f4f6f8;
+  --color-grey: #9daec2;
+  --color-dark-grey: #6e8098;
+
+  /* Background & Text */
+  --bg-color: var(--color-very-dark-blue);
+  --text-color: var(--color-light-grey);
+  --card-bg: var(--color-midnight);
+  --accent-color: var(--color-light-violet);
+}

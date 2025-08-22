@@ -6,6 +6,8 @@
 @import "./css/filter.css";
 @import "./css/card.css";
 @import "./css/loader.css";
+@import "./css/detail.css";
+@import "./css/jobInfo.css";
 
 *,
 *::after,
@@ -76,4 +78,19 @@ h1 {
 }
 .hidden {
   display: none;
+}
+
+.btn2 {
+  background: var(--color-light-violet);
+  padding: 1.6rem 3.8rem;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  color: var(--color-violet);
+  cursor: pointer;
+}
+
+.btn2:hover {
+  background: var(--color-violet);
 }

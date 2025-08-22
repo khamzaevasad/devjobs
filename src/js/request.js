@@ -1,7 +1,5 @@
 import { loaderToggle } from "./loader.js";
 
-export const url = "https://json-api.uz/api/project/job/joblist";
-
 export const getData = async (url) => {
   loaderToggle(true);
   if (!url.trim()) {

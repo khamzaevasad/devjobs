@@ -17,13 +17,22 @@
   border-radius: 6px;
 }
 
-.company-logo {
+.card-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(12, 79%, 52%);
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
   margin-top: -7.5rem;
 }
+
 .job-info {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: 2.4rem;
 }
 .job-description {
   font-size: 1.6rem;

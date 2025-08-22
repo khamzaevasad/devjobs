@@ -51,6 +51,7 @@
   color: var(--color-very-dark-blue);
   appearance: none;
   background: transparent;
+  font-family: inherit;
 }
 
 .icon-location {

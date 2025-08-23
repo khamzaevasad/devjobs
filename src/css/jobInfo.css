@@ -1,7 +1,7 @@
 .job-info-container {
   margin-top: 3.2rem;
   margin-bottom: 3.2rem;
-  background-color: var(--color-white);
+  background-color: var(--card-bg);
   padding: 4.8rem 4.3rem 4.8rem 4.8rem;
   border-radius: 6px;
 }
@@ -20,7 +20,7 @@
 
 .position {
   font-size: 2.8rem;
-  color: var(--color-very-dark-blue);
+  color: var(--text-color);
   font-weight: 700;
 }
 .location {
@@ -46,7 +46,7 @@
 }
 .title {
   font-size: 2rem;
-  color: var(--color-very-dark-blue);
+  color: var(--text-color);
   font-weight: 700;
   margin-bottom: 2.3rem;
 }
@@ -62,10 +62,6 @@
   align-items: center;
 }
 .dot {
-  width: 4px;
-  height: 4px;
-  border-radius: 50px;
-  background-color: var(--color-violet);
   margin-right: 3.2rem;
 }
 

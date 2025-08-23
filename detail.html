@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -58,109 +58,99 @@
 
     <!-- Main Start -->
     <main>
-      <!-- filter -->
+      <!-- company info -->
       <section class="container">
-        <form class="form-container">
-          <label class="form-label">
-            <span>
-              <img
-                class="icon-search"
-                src="./assets/desktop/icon-search.svg"
-                alt="icon-search"
-              />
-            </span>
-            <input
-              class="form-input"
-              name="search"
-              type="text"
-              placeholder="Filter by title, companies, expertise…"
-            />
-            <input
-              class="form-input-mobile"
-              name="search"
-              type="text"
-              placeholder="Filter by title..."
-            />
-          </label>
-          <label class="form-label location-label">
+        <!-- desktop tablet -->
+        <div class="job-site-container">
+          <div class="job-logo">
             <img
-              class="icon-location"
-              src="./assets/desktop/icon-location.svg"
-              alt="icon-location"
+              class="logos"
+              src="../../assets/logos/creative.svg"
+              alt="logo-icon"
             />
-            <select name="location" id="location">
-              <option value="">Filter by location...</option>
-              <option value="newyork">New York</option>
-            </select>
-          </label>
-
-          <input class="checkbox-input" name="fullTime" type="checkbox" />
-          <label class="checkbox-title">Fulltime</label>
-          <button class="btn search-btn">Search</button>
-          <!-- mobile filter icon -->
-          <div class="filter-icon">
-            <span>
-              <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M19.108 0H.86a.86.86 0 00-.764.455.833.833 0 00.068.884l6.685 9.202.007.01c.242.32.374.708.375 1.107v7.502a.825.825 0 00.248.594.865.865 0 00.942.18l3.756-1.4c.337-.1.56-.41.56-.784v-6.092c0-.399.132-.787.375-1.108l.007-.009 6.685-9.202c.19-.26.217-.6.068-.884A.86.86 0 0019.108 0z"
-                  fill="#6E8098"
-                  fill-rule="nonzero"
-                />
-              </svg>
-            </span>
           </div>
-          <!-- moobile btn -->
-          <button class="search-btn-mobile">
-            <span>
-              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M17.112 15.059h-1.088l-.377-.377a8.814 8.814 0 002.15-5.784A8.898 8.898 0 008.898 0 8.898 8.898 0 000 8.898a8.898 8.898 0 008.898 8.899c2.211 0 4.23-.808 5.784-2.143l.377.377v1.081l6.845 6.832 2.04-2.04-6.832-6.845zm-8.214 0A6.16 6.16 0 118.9 2.737a6.16 6.16 0 010 12.322z"
-                  fill="#ffff"
-                  fill-rule="nonzero"
-                />
-              </svg>
-            </span>
-          </button>
-        </form>
+
+          <div class="company-web-links">
+            <div class="company-info-wrapper">
+              <p class="company-name">Scoot</p>
+              <a href="#" class="company-link">scoot.com</a>
+            </div>
+            <a href="#" class="btn company-btn">Company Site</a>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="mobile-job-container">
+          <div class="mobile-job-info">
+            <div class="mobile-card-logo">
+              <img
+                id="mobileLogo"
+                class="mobile-logos"
+                src="../../assets/logos/scoot.svg"
+                alt="company-logo"
+              />
+            </div>
+            <p class="company-name mobile-company-name">Scoot</p>
+            <a href="#" class="company-page">scoot.com</a>
+            <a href="#" class="btn mobileCompanyBtn">Company Site</a>
+          </div>
+        </div>
       </section>
 
-      <!-- job container -->
       <section class="container">
-        <div class="job-container">
-          <ul class="cards"></ul>
-          <template id="cardTemplate">
-            <!-- job list -->
-            <li class="job-list">
-              <a href="#" class="job-card">
-                <!-- company logo -->
-                <div class="card-logo">
-                  <img
-                    class="company-logo"
-                    src="./assets/logos/blogr.svg"
-                    alt="company-logo"
-                  />
-                </div>
-                <!-- job info -->
-                <div class="job-info">
-                  <p class="job-description">
-                    5h ago <span class="job-time">. Full Time</span>
-                  </p>
-                  <h3 class="job-position">Senior Software Engineer</h3>
-                  <p class="job-description company">Scoot</p>
-                </div>
-                <!-- job location -->
-                <p class="job-location">United Kingdom</p>
-              </a>
-            </li>
-          </template>
-          <button id="showMore" class="btn load-more-btn">Load More</button>
-          <button id="showLess" class="btn load-more-btn hidden">
-            Show Less
-          </button>
+        <div class="job-info-container">
+          <div class="info-header">
+            <div class="title-wrapper">
+              <p class="job-description">
+                1w ago <span class="job-time">Part Time</span>
+              </p>
+              <h3 class="position">Senior Software Engineer</h3>
+              <p class="location">United Kingdom</p>
+            </div>
+            <a target="_blank" href="#" class="btn apply-btn">Apply Now</a>
+          </div>
+          <!-- Mobile btn -->
+          <div class="mobile-btn-wrapper">
+            <a target="_blank" href="#" class="btn mobile-apply-btn"
+              >Apply Now</a
+            >
+          </div>
+          <div class="job-description-wrapper">
+            <p class="job-subtitle">job content</p>
+          </div>
+
+          <!-- Requirements -->
+          <div class="requirements">
+            <h3 class="title">Requirements</h3>
+            <p id="requirementsContent" class="job-subtitle">
+              requirements content
+            </p>
+            <ul id="requirement-list-container" class="lists"></ul>
+          </div>
+
+          <!-- what do you will do -->
+          <div class="benefits">
+            <h3 class="title">What You Will Do</h3>
+            <p id="role-content" class="job-subtitle">role content</p>
+            <ul id="roleListContainer" class="lists"></ul>
+          </div>
         </div>
       </section>
     </main>
     <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-titles">
+          <p id="footer-position" class="job-position">
+            Senior Software Engineer
+          </p>
+          <p class="footer-description">So Digital Inc.</p>
+        </div>
+        <a href="#" target="_blank" class="btn footer-btn">Apply Now</a>
+      </div>
+    </footer>
+    <!-- Footer End -->
 
     <!-- Loader -->
     <div class="overlay hidden" id="overlay">
@@ -172,6 +162,6 @@
       </div>
     </div>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/js/detail.js"></script>
   </body>
 </html>

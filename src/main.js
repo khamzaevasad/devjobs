@@ -1,6 +1,7 @@
 import "./style.css";
 import { getData } from "./js/request.js";
 import { updateUI } from "./js/updateUI.js";
+import "./js/mode.js";
 
 const cardTemplate = document.getElementById("cardTemplate");
 const containerEl = document.querySelector(".cards");
@@ -11,7 +12,7 @@ let limit = 12;
 export let url = "https://json-api.uz/api/project/job/joblist";
 
 getData(url + `?limit=${limit}`)
-  .then((data) => {
+  .then(({ data }) => {
     updateUI(data, cardTemplate, containerEl);
   })
   .catch((error) => {
@@ -24,7 +25,7 @@ showMoreBtn.addEventListener("click", () => {
   showLessBtn.classList.remove("hidden");
 
   getData(url + `?limit=${limit}`)
-    .then((data) => {
+    .then(({ data }) => {
       updateUI(data, cardTemplate, containerEl);
     })
     .catch((error) => {
@@ -38,7 +39,7 @@ showLessBtn.addEventListener("click", () => {
   showLessBtn.classList.add("hidden");
 
   getData(url + `?limit=${limit}`)
-    .then((data) => {
+    .then(({ data }) => {
       updateUI(data, cardTemplate, containerEl);
     })
     .catch((error) => {

@@ -47,7 +47,7 @@
   font-size: 2rem;
   line-height: 100%;
   font-weight: 700;
-  color: var(--color-very-dark-blue);
+  color: var(--text-color);
 }
 
 .job-location {

@@ -12,7 +12,7 @@ export const getData = async (url) => {
       throw new Error("Something went wrong");
     }
     const data = await req.json();
-    return data.data;
+    return data;
   } catch (error) {
     alert(error.message);
     throw error;

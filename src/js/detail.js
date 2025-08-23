@@ -1,16 +1,16 @@
 import "../style.css";
 import { getData } from "./request.js";
+import { updateDetail } from "./updateUI.js";
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
 if (id) {
   getData("https://json-api.uz/api/project/job/joblist/" + id)
-    .then((data) => console.log(data))
+    .then((data) => {
+      updateDetail(data);
+    })
     .catch((error) => {
       console.log(error);
     });
 }
-
-console.log("API URL:", "https://json-api.uz/api/project/job/joblist/" + id);
-console.log("ID:", id);

@@ -8,7 +8,7 @@ const showMoreBtn = document.getElementById("showMore");
 const showLessBtn = document.getElementById("showLess");
 
 let limit = 12;
-let url = "https://json-api.uz/api/project/job/joblist";
+export let url = "https://json-api.uz/api/project/job/joblist";
 
 getData(url + `?limit=${limit}`)
   .then((data) => {

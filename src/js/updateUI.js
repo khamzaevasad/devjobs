@@ -7,6 +7,7 @@ export const updateUI = (data, template, containerEl) => {
       item;
     const clone = template.content.cloneNode(true);
 
+    const card = clone.querySelector(".job-card");
     const cardLogo = clone.querySelector(".card-logo");
     const companyLogo = clone.querySelector(".company-logo");
     const posted = clone.querySelector(".job-description");
@@ -22,6 +23,7 @@ export const updateUI = (data, template, containerEl) => {
     jobPosition.textContent = position;
     companyName.textContent = company;
     jobLocation.textContent = item.location;
+    card.href = `/pages/detail.html?id=${id}`;
 
     fragment.appendChild(clone);
   });

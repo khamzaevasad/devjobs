@@ -15,6 +15,7 @@ export const getData = async (url) => {
     return data.data;
   } catch (error) {
     alert(error.message);
+    throw error;
   } finally {
     loaderToggle(false);
   }

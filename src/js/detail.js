@@ -1,4 +1,5 @@
 import "../style.css";
+import "./mode.js";
 import { getData } from "./request.js";
 import { updateDetail } from "./updateUI.js";
 

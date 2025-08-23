@@ -94,3 +94,9 @@ h1 {
 .btn2:hover {
   background: var(--color-violet);
 }
+
+label,
+input,
+button {
+  font-family: inherit;
+}

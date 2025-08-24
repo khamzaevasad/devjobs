@@ -15,7 +15,9 @@ export const updateUI = (data, template, containerEl) => {
     const jobPosition = clone.querySelector(".job-position");
     const companyName = clone.querySelector(".company");
     const jobLocation = clone.querySelector(".job-location");
+    const joblist = clone.querySelector(".job-list");
 
+    joblist.dataset.title = position;
     cardLogo.style.backgroundColor = logoBackground;
     companyLogo.src = logo;
     posted.textContent = postedAt;
@@ -31,8 +33,6 @@ export const updateUI = (data, template, containerEl) => {
 };
 
 export const updateDetail = (data) => {
-  console.log(data);
-
   const {
     company,
     contract,

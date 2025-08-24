@@ -2,9 +2,9 @@
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/public/work-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>devjobs-web-app</title>
+    <title>Dev Jobs</title>
   </head>
   <body>
     <!-- Header Start -->
@@ -70,17 +70,17 @@
               />
             </span>
             <input
-              class="form-input"
+              class="form-input searchTerm"
               name="search"
               type="text"
               placeholder="Filter by title, companies, expertise…"
             />
-            <input
-              class="form-input-mobile"
+            <!-- <input
+              class="form-input-mobile searchTerm"
               name="search"
               type="text"
               placeholder="Filter by title..."
-            />
+            /> -->
           </label>
           <label class="form-label location-label">
             <img
@@ -158,6 +158,13 @@
             Show Less
           </button>
         </div>
+      </section>
+
+      <section class="container hidden user-message">
+        <h3 class="messages">
+          There are no vacancies for the
+          <span id="position"></span> position at this time.
+        </h3>
       </section>
     </main>
     <!-- Main End -->

@@ -23,6 +23,7 @@
   outline: none;
   font-size: 1.4rem;
   background-color: var(--card-bg);
+  color: var(--text-color);
 }
 
 .icon-search {
@@ -128,7 +129,7 @@
     cursor: pointer;
   }
   .form-input {
-    display: none;
+    /* display: none; */
   }
   .form-input-mobile {
     display: flex;

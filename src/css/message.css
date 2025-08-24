@@ -1,0 +1,16 @@
+.user-message {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.messages {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+#position {
+  color: red;
+  text-decoration: underline;
+}

@@ -2,6 +2,7 @@ import "./style.css";
 import { getData } from "./js/request.js";
 import { updateUI } from "./js/updateUI.js";
 import "./js/mode.js";
+import "./js/search.js";
 
 const cardTemplate = document.getElementById("cardTemplate");
 const containerEl = document.querySelector(".cards");

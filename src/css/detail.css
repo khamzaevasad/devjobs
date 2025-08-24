@@ -52,7 +52,7 @@
   }
   .mobile-job-container {
     border-radius: 6px;
-    background-color: var(--color-white);
+    background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,7 @@
   .company-page {
     font-size: 1.6rem;
     font-weight: 400;
-    color: var(--color-dark-grey);
+    color: var(--text-color);
   }
   .apply-btn {
     display: none;
@@ -93,6 +93,7 @@
   .mobile-apply-btn {
     margin-top: 5rem;
     width: 100%;
+    text-align: center;
   }
   .footer-titles {
     display: none;

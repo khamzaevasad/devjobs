@@ -37,7 +37,7 @@ export const updateUI = (data, template, containerEl) => {
     jobPosition.textContent = position;
     companyName.textContent = company;
     jobLocation.textContent = item.location;
-    card.href = `/src/pages/detail.html?id=${id}`;
+    card.href = `/detail.html?id=${id}`;
 
     fragment.appendChild(clone);
   });

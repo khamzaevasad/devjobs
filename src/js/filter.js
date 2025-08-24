@@ -3,18 +3,29 @@ const cards = document.querySelector(".cards");
 const showMoreBtn = document.getElementById("showMore");
 const checkbox = document.querySelector(".checkbox-input");
 
-filterForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const formData = new FormData(e.target);
+const filterJob = () => {
+  const formData = new FormData(filterForm);
   const location = formData.getAll("location");
-  const contract = formData.get("Full Time");
+  const isChecked = checkbox.checked;
 
   Array.from(cards.children).forEach((item) => {
-    if (item.dataset.location.includes(location)) {
+    const filterLocation = item.dataset.location.includes(location);
+    const filterChecked = !isChecked || item.dataset.contract === "Full Time";
+
+    if (filterLocation && filterChecked) {
       item.style.display = "flex";
-      showMoreBtn.classList.add("hidden");
     } else {
       item.style.display = "none";
     }
   });
+};
+
+filterForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  filterJob();
+});
+
+checkbox.addEventListener("change", (e) => {
+  e.preventDefault();
+  filterJob();
 });

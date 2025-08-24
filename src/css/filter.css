@@ -84,10 +84,6 @@
   display: none;
 }
 
-.form-input-mobile {
-  display: none;
-  background-color: var(--card-bg);
-}
 @media (max-width: 600px) {
   .location-label {
     display: none;
@@ -127,16 +123,5 @@
     justify-content: center;
     margin-right: 2.4rem;
     cursor: pointer;
-  }
-  .form-input {
-    /* display: none; */
-  }
-  .form-input-mobile {
-    display: flex;
-    padding: 1rem;
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 1.4rem;
   }
 }

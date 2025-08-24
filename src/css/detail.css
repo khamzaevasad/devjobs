@@ -28,7 +28,7 @@
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 100%;
-  color: var(--color-very-dark-blue);
+  color: var(--text-color);
 }
 .company-link {
   color: var(--color-dark-grey);

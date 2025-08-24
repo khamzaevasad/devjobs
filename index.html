@@ -73,14 +73,8 @@
               class="form-input searchTerm"
               name="search"
               type="text"
-              placeholder="Filter by title, companies, expertise…"
+              placeholder="Filter by title, companies..."
             />
-            <!-- <input
-              class="form-input-mobile searchTerm"
-              name="search"
-              type="text"
-              placeholder="Filter by title..."
-            /> -->
           </label>
           <label class="form-label location-label">
             <img
@@ -88,13 +82,12 @@
               src="./assets/desktop/icon-location.svg"
               alt="icon-location"
             />
-            <select name="location" id="location">
-              <option value="">Filter by location...</option>
-              <option value="newyork">New York</option>
+            <select class="location-container" name="location" id="location">
+              <option>Filter by location...</option>
             </select>
           </label>
 
-          <input class="checkbox-input" name="fullTime" type="checkbox" />
+          <input class="checkbox-input" name="Full Time" type="checkbox" />
           <label class="checkbox-title">Fulltime</label>
           <button class="btn search-btn">Search</button>
           <!-- mobile filter icon -->
@@ -142,9 +135,7 @@
                 </div>
                 <!-- job info -->
                 <div class="job-info">
-                  <p class="job-description">
-                    5h ago <span class="job-time">. Full Time</span>
-                  </p>
+                  <p class="job-description">5h ago</p>
                   <h3 class="job-position">Senior Software Engineer</h3>
                   <p class="job-description company">Scoot</p>
                 </div>
@@ -159,7 +150,7 @@
           </button>
         </div>
       </section>
-
+      <!-- user message -->
       <section class="container hidden user-message">
         <h3 class="messages">
           There are no vacancies for the

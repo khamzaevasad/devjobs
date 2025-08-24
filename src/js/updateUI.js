@@ -2,6 +2,17 @@ export const updateUI = (data, template, containerEl) => {
   const fragment = document.createDocumentFragment();
   containerEl.innerHTML = "";
 
+  const locationList = [...new Set(data.map((item) => item.location))];
+
+  const locationContainer = document.querySelector(".location-container");
+
+  locationList.forEach((item) => {
+    const optionEl = document.createElement("option");
+    optionEl.value = item;
+    optionEl.textContent = item;
+    locationContainer.appendChild(optionEl);
+  });
+
   data.forEach((item) => {
     const { id, company, contract, logo, logoBackground, position, postedAt } =
       item;
@@ -11,17 +22,18 @@ export const updateUI = (data, template, containerEl) => {
     const cardLogo = clone.querySelector(".card-logo");
     const companyLogo = clone.querySelector(".company-logo");
     const posted = clone.querySelector(".job-description");
-    const jobTime = clone.querySelector(".job-time");
     const jobPosition = clone.querySelector(".job-position");
     const companyName = clone.querySelector(".company");
     const jobLocation = clone.querySelector(".job-location");
     const joblist = clone.querySelector(".job-list");
+    const jobInfo = clone.querySelector(".job-info");
 
+    joblist.dataset.contract = contract;
     joblist.dataset.title = position;
+    joblist.dataset.location = item.location;
     cardLogo.style.backgroundColor = logoBackground;
     companyLogo.src = logo;
-    posted.textContent = postedAt;
-    jobTime.textContent = contract;
+    posted.textContent = `${postedAt} || ${contract}`;
     jobPosition.textContent = position;
     companyName.textContent = company;
     jobLocation.textContent = item.location;

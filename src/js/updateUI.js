@@ -26,7 +26,7 @@ export const updateUI = (data, template, containerEl) => {
     const companyName = clone.querySelector(".company");
     const jobLocation = clone.querySelector(".job-location");
     const joblist = clone.querySelector(".job-list");
-    const jobInfo = clone.querySelector(".job-info");
+    // const jobInfo = clone.querySelector(".job-info");
 
     joblist.dataset.contract = contract;
     joblist.dataset.title = position;

@@ -2,7 +2,7 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/pages/(.*)",
       "destination": "/pages/$1"
     }
   ]
